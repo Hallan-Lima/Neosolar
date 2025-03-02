@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.util;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -37,6 +37,16 @@ public class IdGeneratorController {
 
         return newId;
     }
+
+    /**
+     * Retorna a quantidade de IDs únicos gerados.
+     *
+     * @return número total de IDs gerados
+     */
+    public int getTotalGeneratedIds() {
+        return potenciaToIdMap.size();
+    }
+
 
     /**
      * Optional: Exibe o mapeamento atual de potências para IDs.
